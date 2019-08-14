@@ -1,0 +1,874 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+.content{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+header{
+  
+    width: 100%;
+    min-height: 2em;
+    background-color: black;
+    padding: 1em 0;
+    box-sizing: border-box;
+    
+
+}
+
+nav.upper__menu{
+    list-style: none;
+   
+    
+}
+
+li.upper__menu{
+    display:inline-block;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: 700;
+    margin-left:1em;
+    
+}
+.ul__anchor{
+    position:relative;
+}
+#do__menu{
+    font-size: 0.8em;
+    list-style: none;
+    position:absolute;
+    right:10em;
+    z-index:1;
+    
+    
+} 
+
+.d__menu{
+    display:none;
+}
+
+
+
+.d__menu li{
+    
+    color:white;
+    background-color:black;
+    width:8em;
+    padding: .4em;
+}
+
+.d__menu li:hover{
+    font-weight: 600;
+    
+}
+
+.d__menu li:first-of-type{
+    background-color: transparent;
+    color:transparent;
+    height: 1em;
+}
+
+.d__menu li:nth-of-type(2){
+    padding-top:0.9em;
+    position:relative;
+}
+
+.d__menu li:nth-of-type(2)::before{
+    
+    content: "";
+    width:.5em;
+    height: 0.5em;;
+    color:transparent;
+    border-top:1em solid black;
+    border-right:1em solid black;
+    border-bottom: transparent;
+    border-left:transparent;
+    transform:rotate(-45deg);
+    position:absolute;
+    top:-.5em;
+    left: 40%;;
+}
+
+a.menu__link{
+    text-decoration: none;
+    color:white;
+}
+
+a.menu__link:hover{
+    color:#00c39e;
+}
+
+.logo{
+    font-size: .8em;
+    color:white;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-weight: 700;
+    max-width: 40%;  
+}
+
+
+div.upper__contener{
+display:flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+
+}
+
+span.blue__word{
+   
+    color: #00c39e;
+}
+
+/*slider*/
+
+.slider{
+    width: 100%;
+    min-height: 5em;
+    padding: 50px 0;
+    background-image: linear-gradient(to bottom, #fafafa, #eeeef0, #e3e1e7, #d8d5dd, #cdc9d3);
+}
+
+.slider .slider__section {
+    
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+.slider{
+    position: relative;
+}
+
+
+.a__anchor{
+    position: relative;
+}
+.prev__button{
+    position: absolute;
+    top: 3em;;
+    left: .25em;
+    font-size: 3em;
+    color: #00c39e;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.next__button{
+    position: absolute;
+    top: 3em;
+    right: .25em;
+    font-size: 3em;
+    color: #00c39e;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+.slider__image {
+    box-sizing: border-box;
+    min-width: 50px;
+    width:calc(50% - 20px);
+    margin-right:20px; 
+}
+
+.slides{
+    display:none;
+}
+
+.visible{
+    display:block;
+}
+
+
+
+.slider__image img {
+    width: 100%;
+}
+
+.slider__article{
+    min-width: 50px;
+    box-sizing:border-box;
+    width:calc(50% - 20px);
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-right:130px;
+    
+}
+
+.slider h2{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-weight: 500;
+    font-size: 42px;
+}
+
+h2 span.blue__word{
+    font-weight: 700;
+}
+
+p.slider__text{
+    text-align:center;
+    padding: 10px 10px;
+    font-size:16px;
+    line-height: 1.5em;
+    margin-bottom:20px;
+}
+
+/* poniżej button w sliderze */
+
+.slider .button{
+    display:block;
+    background-color: #00c39e;
+    padding: 10px 25px;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+
+
+.slider .button a{
+    text-decoration: none;
+}
+.slider .button:hover>a{
+    font-weight: 600;
+}
+
+.slider .button span{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    
+}
+/*
+poniżej zajmuję się sekcja ze skróconą ofertą
+*/
+
+section.short__offer__sec{
+    margin-top: 20px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    
+}
+
+.sh__off__img{
+    width: calc(33% - 18px);
+    overflow: hidden;
+    
+}
+
+.sh__off__img img{
+    width:100%;
+
+}
+
+.sh__off__img p{
+    color:#606060;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+article.sh__off__img{
+    border: 1px solid #C0C0C0;
+    padding: 20px 20px;
+    
+}
+
+.sh__off__img h3{
+    margin-bottom: 20px;
+    margin-top:15px;
+    font-size:16px;
+    font-weight: 500;
+}
+
+/* stylowanie sekcji ze skroconą ofertą */
+#first{
+    position:relative;
+}
+#first:before{
+    width:100%;
+    height: 12%;
+    background-color:rgba(255, 255, 255, 0.45);
+   
+    content: "Chair CLAIR";
+    font-size: 14px;
+    position: absolute;
+    top:50%;
+    font-weight: 500;
+    padding:10px 15px;  
+}
+
+#first:after{
+    content:"Chair MARGARIT";
+    color:transparent;
+   
+    position:absolute;
+    top:54%;
+    border-bottom: 5px solid #00c39e;
+    margin-left:15px;
+    display:none;
+}
+
+
+
+#first:hover#first:after{
+    display:block;
+}
+
+#second{
+    position:relative;
+}
+#second:before{
+    width:100%;
+    height: 12%;
+    background-color:rgba(255, 255, 255, 0.45);
+    content: "Chair MARGARITA";
+    font-size: 14px;
+    position: absolute;
+    top:50%;
+    font-weight: 500;
+    padding:10px 15px;  
+}
+
+#second:after{
+    content:"Chair MARGARIT";
+    color:transparent;
+   
+    position:absolute;
+    top:54%;
+    border-bottom: 5px solid #00c39e;
+    margin-left:15px;
+    display:none;
+}
+
+#second:hover#second:after{
+    display:block;
+}
+
+article.sh__off__img{
+    position:relative;
+
+}
+
+#description:before{
+    content:"Chair MARGARITAA";
+    color:transparent;
+   
+    position:absolute;
+    top:12%;
+    border-bottom: 5px solid #00c39e;
+    margin-left:0px;
+    display:none;
+}
+
+article.sh__off__img:hover#description:before{
+    display:block;
+}
+
+/* ponizej dzialam z cennikiem */
+
+.prices{
+    background-color:#F1F1F1;
+    margin-top:40px;
+}
+
+
+
+.price__list h2{
+    font-size: 18px;
+    font-weight: 300;
+    padding:40px 0 60px 0;;
+    text-transform: uppercase;
+}
+
+
+
+.price__package{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    position:relative;
+    padding-bottom: 5em;
+}
+.price__package h3{
+    text-align: center;
+    text-transform: uppercase;
+    color:#00c39e;
+    font-weight: 300;
+    font-size:18px;
+    padding: 30px 0 30px 0;
+    
+}
+
+#pp:before{
+    content:"Chair MARGARITAA Chair MARGARITAA";
+    color:transparent;
+    position:absolute;
+    top:-15%;
+    border-bottom: 5px solid #00c39e;
+    margin-left:0px;
+    display:block;
+}
+
+
+div.price__package:hover#pp:before{
+    display:block; /*opcja dla klienta*/
+}
+
+.price__package .standard h3{
+    color:white;
+    font-weight: 500;
+}
+.price{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price span{
+    display:block;
+    text-align: center;  
+    color:#C5C5C5;  
+}
+
+.standard .price span{
+    color:#00c39e;
+}
+
+.price span:first-of-type{
+    font-size: 32px;
+    font-weight:700;
+}
+.price span:nth-of-type(2){
+    font-size: 12px;
+    font-weight:500;
+    
+    text-transform: uppercase;
+}
+
+.price span sup{
+    font-size: 12px;
+    color:#C5C5C5; 
+    vertical-align: top;
+}
+.standard .price span sup{
+    color:#00c39e;
+}
+.price p{
+    font-size: 20px;
+    width:6em;
+    height: 6em;
+   
+    padding: 25px;
+   
+    border: solid 1px #C0C0C0;
+    border-radius: 50%;
+}
+.standard .price p{
+    background-color: #FFFFFF;
+    border:solid 1px #00c39e;
+    
+}
+.devided{
+    width:calc(33% - 18px);
+    border:solid 1px #C0C0C0; /*#F0EAEA;*/
+    background-color: #F9F9F9;  
+}
+.devided.standard{
+    border:solid 1px #00c39e; /*#F0EAEA;*/
+    background-color: #00c39e; 
+}
+
+.devided .button{
+    text-align:center;
+    align-self:flex-end;
+    margin-top: 1rem;
+    
+}
+.devided .button a:hover{
+    font-weight: 600;
+}
+
+
+.price__package li{
+    list-style:none;
+    text-align: center;
+    background-color: #E4E4E4;
+    color:#7E7E7E;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.standard li{
+    background-color: #FFFFFF;
+}
+
+.price__package li:nth-of-type(2n){
+    background-color: #F1F1F1;
+}
+
+.devided .offer{
+    margin-top:30px;
+    min-height: 8em;
+}
+
+.devided .button a{
+    
+    display:inline-block;
+    background-color: #00c39e;
+    padding: 5px 25px;
+    border-radius:10px;
+    color:white;
+    text-transform: uppercase;
+    font-size:14px;
+    text-decoration: none;
+    margin-bottom: 15px;
+    margin-top:15px;
+}
+
+/* szykuje oferte standard */
+
+.devided.standard .button a{
+    background-color: #FFFFFF;
+    color:#00c39e;
+}
+
+/*poniżej kółeczka do ofert*/
+.basic{
+    position:relative;
+}
+.basic::before{
+    content:"";
+    display:block;
+    width: 3em;
+    height: 3em;
+    border-radius:50%;
+    border: 1px solid #C0C0C0;
+    position:absolute;
+    top:-2em;
+    left:calc(50% - 1.5em);
+    background-color: #F9F9F9;
+}
+
+.basic::after{
+    content:"";
+    display:block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius:50%;
+
+    position:absolute;
+    top:-1.25em;
+    right:calc(50% - .75em);
+    background-color: #C0C0C0;
+}
+
+.basic:hover.basic::after{
+    background-color: rgba(0, 195, 158, 0.29);
+}
+
+/*standard*/
+.standard{
+    position:relative;
+}
+.standard::before{
+    content:"";
+    display:block;
+    width: 3em;
+    height: 3em;
+    border-radius:50%;
+    border: 1px solid #00c39e;
+    position:absolute;
+    top:-2em;
+    left:calc(50% - 1.5em);
+    background-color: #00c39e;
+}
+
+.standard::after{
+    content:"";
+    display:block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius:50%;
+
+    position:absolute;
+    top:-1.25em;
+    right:calc(50% - .75em);
+    background-color: #F9F9F9;
+}
+
+.standard:hover.standard::after{
+    background-color: rgba(255, 60, 97, 0.29);/* rgba(0, 195, 158, 0.19));*/
+}
+
+/*advance*/
+
+.advance{
+    position:relative;
+}
+.advance::before{
+    content:"";
+    display:block;
+    width: 3em;
+    height: 3em;
+    border-radius:50%;
+    border: 1px solid #C0C0C0;
+    position:absolute;
+    top:-2em;
+    left:calc(50% - 1.5em);
+    background-color: #F9F9F9;
+}
+
+.advance::after{
+    content:"";
+    display:block;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius:50%;
+
+    position:absolute;
+    top:-1.25em;
+    right:calc(50% - .75em);
+    background-color: #C0C0C0;
+}
+
+.advance:hover.advance::after{
+    background-color: rgba(0, 195, 158, 0.29);
+}
+
+/* poniżej kontakt */
+
+
+.form__body{
+    display:flex;
+    justify-content: space-between;
+}
+
+.contact .content h2{
+    text-transform:uppercase;
+    font-size: 18px;
+    font-weight: 300;
+    padding:40px 0 60px 0;;
+    text-transform: uppercase;
+    position:relative;
+}
+
+.contact .content h2:before{
+    content:"Chair MARGARITAA Chair MARGARITAA";
+    color:transparent;
+    position:absolute;
+    bottom:3em;
+    border-bottom: 5px solid #00c39e;
+    margin-left:0px;
+    display:block;
+}
+
+.user__data{
+    width: calc(66% - 1em);
+    padding-top: 2em;
+}
+
+.agree{
+    width: calc(33% - 1em);
+}
+
+.user__data input{
+    width:100%;
+    font-size:20px;
+    height: 2.5em;
+    border: 0.2px solid #00c39e;
+    margin-bottom:1em;
+
+    padding-left: 0.5em;
+    color: #606060;
+    font-weight: 200;
+}
+
+
+.user__data textarea{
+    width:100%;
+    height: 8em;
+    font-size:20px;
+    
+    border: 0.2px solid #00c39e;
+    margin-bottom:1em;
+    padding-left: 0.5em;
+    padding-top: 0.5em;
+    color: #606060;
+    font-weight: 200;
+    resize:none;  
+}
+
+
+
+.agree .img{
+    width:100%;
+    height: 10em; /*8.75em;*/
+    overflow: hidden;
+    margin-bottom: 2em;
+}
+
+.agree .img img{
+    height: 100%;
+    width:auto;
+    display:block;
+    margin: 0 auto;
+}
+
+
+
+
+/*ckeckbox*/
+ .checkbox__pakage{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+} 
+input[type=checkbox] + label{
+    display:block;
+    cursor:pointer;
+}
+
+input[type=checkbox]{
+    display:none;
+    
+}
+
+ label{
+    font-weight: 100;
+    font-size: 17px;
+       
+} 
+
+input[type=checkbox] + label:before{
+    content: "";
+   
+    font-size: 50px;
+    
+    border:0.1px solid #00c39e;
+    display:inline-block;
+    width:.7em;
+    height: .7em;
+    padding:0.1em;
+    
+   
+    margin-right:0.2em;
+   
+    vertical-align: top;
+    float:left;
+
+   
+}
+
+input[type=checkbox]:checked + label:before{
+    
+    transition: .3s;
+
+    background: url("../images/form_ok.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y:center; 
+}
+
+input[type=checkbox] + label:active:before{
+    transform:scale(0);
+}
+
+div.checkbox__pakage::before{
+    content:"";
+    clear: both;
+    display:block;
+}
+
+div.checkbox__pakage::after{
+    clear: both;
+    content:"";
+    display:block;
+}
+
+/* poniżej guzik w formularzu */
+
+.form__body .button{
+    display:block;
+    background-color: #00c39e;
+    padding: 10px 25px;
+    border-radius:10px;
+    cursor: pointer;
+    margin-top:2em;
+    text-align: center;
+
+}
+
+
+.form__body .button a{
+    text-decoration: none;
+    
+}
+.form__body .button:hover{
+  
+    border:solid 2px white;
+}
+
+
+.form__body .button span{
+    
+   
+    color: white;
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: 700;
+   
+    
+}
+
+/*footer*/
+
+footer.content{
+    display:flex;
+    color:#7E7E7E;
+    margin-top:4em;
+    margin-bottom: 4em;
+    font-size:14px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+footer p:nth-of-type(2){
+    text-transform: uppercase;
+    
+    font-weight: 400;
+    
+}
+
+footer p span{
+    font-weight: 600;
+}
+
+div.social__media{
+    margin-left:20em;
+}
+
+
+/* co bym zmieniła, gdybym drugi raz do projektu siadła:
+- wprowadziłabym standardy: takie same jednostki (jeśli korzystam z % przy pseudoelementach to bym to kontynuowała w całym dokumencie)
+- określiłabym standardowe paddingi, marginy, bordery itp.
+- ograniczyła liczbę stylowanych elementów: raz określiłabym klasę np. dla buttonów a potem tylko dostosowywała je do potrzeb
+- ujednoliciłabym "animacje" elementów 
+- precyzjniej nazywała klasy i id
+- przygotowałabym projekt pod js wcześniej (na etapie planowania/organizacji pracy przy projekcie)
+*/
